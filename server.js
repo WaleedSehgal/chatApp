@@ -9,7 +9,7 @@ app.use(express.static(__dirname))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: false}))
 
-var dbURL = '<your mongodb service URL'
+var dbURL = '<your mongodb service URL>'
 
 var Message = mongoose.model('Message', {
     name: String,
